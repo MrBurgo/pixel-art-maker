@@ -1,0 +1,43 @@
+body {
+  background-color: Lightgrey;
+}
+
+.grid-row{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:center;
+}
+
+.pixel{
+  flex: 1;
+  border: gainsboro solid 1px;
+  background-color:white;
+  max-width:15px;
+  height: 15px;
+  margin: 0px;
+}
+
+.palette{
+  display:flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+}
+
+.palette-color{
+  flex: 1;
+  max-width: 40px;
+  height: 40px;
+  border-radius:50px;
+  margin: 10px;
+  border: 3px solid white;
+  opacity: 0.5;
+}
+
+.red{
+  background-color:red;
+}
+
+.blue{
+  background-color:blue;
+}
