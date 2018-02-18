@@ -2,36 +2,46 @@ body {
   background-color: Lightgrey;
 }
 
-.grid-row{
+#main-body{
   display:flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content:center;
 }
 
-.pixel{
-  flex: 1;
-  border: gainsboro solid 1px;
-  background-color:white;
-  max-width:15px;
-  height: 15px;
-  margin: 0px;
+/* Begin Left column CSS */
+#left-column{
+  margin: 0px 15px 0px 10px;
+}
+
+#x-input{
+  margin: 5px;
+}
+
+#y-input{
+  margin: 5px;
+}
+
+#submit{
+  margin:5px;
+}
+
+#input-div{
+  margin:5px;
 }
 
 .palette{
   display:flex;
-  flex-direction:row;
-  flex-wrap: wrap;
+  width: 200px;
+  flex-wrap:wrap;
 }
 
+
 .palette-color{
-  flex: 1;
-  max-width: 40px;
+  min-width: 40px;
   height: 40px;
   border-radius:50px;
   margin: 10px;
   border: 3px solid white;
   opacity: 0.5;
+  flex-grow: 0;
 }
 
 .red{
@@ -40,4 +50,86 @@ body {
 
 .blue{
   background-color:blue;
+}
+
+.green{
+  background-color:green;
+}
+
+.yellow{
+  background-color:yellow;
+}
+
+.black{
+  background-color:black;
+}
+
+.white{
+  background-color:white;
+}
+
+/* End Left column CSS */
+.grid{
+  display:flex;
+  flex-wrap:wrap;
+  flex: 1 1 auto;
+}
+
+.grid-row{
+  display:block;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:left;
+}
+
+
+.pixel{
+  flex: 1;
+  border: gainsboro solid 1px;
+  background-color:white;
+  min-width:15px;
+  max-width:15px;
+  height: 15px;
+  margin: 0px;
+}
+
+.palette{
+  display:flex;
+  width: 200px;
+  flex-wrap:wrap;
+}
+
+
+.palette-color{
+  min-width: 40px;
+  height: 40px;
+  border-radius:50px;
+  margin: 10px;
+  border: 3px solid white;
+  opacity: 0.5;
+  flex-grow: 0;
+}
+
+.red{
+  background-color:red;
+}
+
+.blue{
+  background-color:blue;
+}
+
+.green{
+  background-color:green;
+}
+
+.yellow{
+  background-color:yellow;
+}
+
+.black{
+  background-color:black;
+}
+
+.white{
+  background-color:white;
 }
