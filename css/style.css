@@ -1,38 +1,83 @@
 body {
-  background-color: Lightgrey;
+  background-image: url('wood-background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color:#333333;
 }
 
 #main-body{
   display:flex;
+  justify-content: center;
 }
 
 /* Begin Left column CSS */
+.title{
+  color:white;
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 1rem;
+}
+
 #left-column{
   margin: 0px 15px 0px 10px;
+  padding-bottom: 10px;
+  flex-direction: column;
 }
 
 #x-input{
-  margin: 5px;
+  margin: auto;
+  width: 80%;
+  display: block;
+  font-size: 14px;
 }
 
 #y-input{
-  margin: 5px;
+  margin: auto;
+  width: 80%;
+  display: block;
+  font-size: 14px;
 }
 
 #submit{
-  margin:5px;
+  margin: auto;
+  display: block;
 }
 
 #input-div{
   margin:5px;
 }
 
+/* Start Color Palette */
+.red{
+  background-color:red !important;
+}
+
+
+.blue{
+  background-color:blue !important;
+}
+
+.green{
+  background-color:green !important;
+}
+
+.yellow{
+  background-color:yellow !important;
+}
+
+.black{
+  background-color:black !important;
+}
+
+.white{
+  background-color:white !important;
+}
+
 .palette{
   display:flex;
   width: 200px;
   flex-wrap:wrap;
+  margin: auto;
 }
-
 
 .palette-color{
   min-width: 40px;
@@ -40,46 +85,47 @@ body {
   border-radius:50px;
   margin: 10px;
   border: 3px solid white;
-  opacity: 0.5;
   flex-grow: 0;
+  transition: 0.1s;
 }
 
-.red{
-  background-color:red;
+.palette-color:hover{
+  transform: translate(0px, -10px);
+  transition: 0.1s;
+}
+/* End Color Palette */
+
+.color-selected{
+  margin: 0px 15px 0px 10px;
+  justify-content:center;
+  text-align:center;
 }
 
-.blue{
-  background-color:blue;
-}
-
-.green{
-  background-color:green;
-}
-
-.yellow{
-  background-color:yellow;
-}
-
-.black{
-  background-color:black;
-}
-
-.white{
+.current-color{
+  width: 50%;
+  height: 2rem;
+  display: block;
   background-color:white;
+  border: 2px solid black;
+  margin: auto;
 }
 
 /* End Left column CSS */
+/* Begin Grid CSS */
 .grid{
   display:flex;
-  flex-wrap:wrap;
-  flex: 1 1 auto;
+  justify-content:center;
+}
+
+.grid-border{
+  border: solid 4px grey;
 }
 
 .grid-row{
   display:block;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content:left;
+  justify-content:center;
 }
 
 
@@ -92,44 +138,4 @@ body {
   height: 15px;
   margin: 0px;
 }
-
-.palette{
-  display:flex;
-  width: 200px;
-  flex-wrap:wrap;
-}
-
-
-.palette-color{
-  min-width: 40px;
-  height: 40px;
-  border-radius:50px;
-  margin: 10px;
-  border: 3px solid white;
-  opacity: 0.5;
-  flex-grow: 0;
-}
-
-.red{
-  background-color:red;
-}
-
-.blue{
-  background-color:blue;
-}
-
-.green{
-  background-color:green;
-}
-
-.yellow{
-  background-color:yellow;
-}
-
-.black{
-  background-color:black;
-}
-
-.white{
-  background-color:white;
-}
+/* End Grid CSS */
