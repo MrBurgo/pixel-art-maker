@@ -52,12 +52,14 @@ document.addEventListener('DOMContentLoaded', function (){
   });
 // Event listener to paint the canvas with a chosen color. Will delete old color class and replace it with new color class on click
   gridBody.addEventListener('click', function (event){
-    if (event.target.classList.length > 1){
-      classLength = event.target.classList.length;
-      for (var i = classLength - 1; i > 0; i--){
-        event.target.classList.remove(event.target.classList[i])
+    if (event.target.classList[0].includes('pixel')){
+      if (event.target.classList.length > 1){
+        classLength = event.target.classList.length;
+        for (var i = classLength - 1; i > 0; i--){
+          event.target.classList.remove(event.target.classList[i])
+        }
       }
+      event.target.classList.add(currentColor);
     }
-    event.target.classList.add(currentColor);
   })
 });
